@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiempo Dojo</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="top">
+            <div class="title-box">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="cities-box">
+                <p class="city-1" onclick="alertCity(this)">Burbank</p>
+                <p class="city-2" onclick="alertCity(this)">Chicago</p>
+                <p class="city-3" onclick="alertCity(this)">Dallas</p>
+            </div>
+        </div>
+        <div class="sub-top">
+            <div class="subtitle-box">
+                <p>San Jose</p>
+            </div>
+            <div class="temperature-box">
+                <label>show temperature in</label>
+                <select class="selector" onchange="switchingMetric(this)">
+                    <option value="celsius">°C</option>
+                    <option value="farenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="days-container">
+            <div class="day0-box">
+                <div class="day-box-top">
+                    <p class="days">Today</p>
+                    <img src="assets/some_rain.png" alt="mild rain" class="some-rain">
+                    <p class="description">some rain</p>
+                </div>
+                <div class="day-box-bottom">
+                    <div class="maxTemp">
+                        <span class="highest">24</span>°
+                    </div>
+                    <div class="minTemp">
+                        <span class="lowest">18</span>°
+                    </div>
+                </div>
+            </div>
+            <div class="day1-box">
+                <div class="day-box-top">
+                    <p class="days">Tomorrow</p>
+                    <img src="assets/some_sun.png" alt="slightly sunny" class="some-sun">
+                    <p class="description">some sun</p>
+                </div>
+                <div class="day-box-bottom">
+                    <div class="maxTemp">
+                        <span class="highest">27</span>°
+                    </div>
+                    <div class="minTemp">
+                        <span class="lowest">19</span>°
+                    </div>
+                </div>
+            </div>
+            <div class="day2-box">
+                <div class="day-box-top">
+                    <p class="days">Friday</p>
+                    <img src="assets/some_clouds.png" alt="slightly sloudy" class="some-clouds">
+                    <p class="description">some clouds</p>
+                </div>
+                <div class="day-box-bottom">
+                    <div class="maxTemp">
+                        <span class="highest">21</span>°
+                    </div>
+                    <div class="minTemp">
+                        <span class="lowest">16</span>°
+                    </div>
+                </div>
+            </div>
+            <div class="day3-box">
+                <div class="day-box-top">
+                    <p class="days">Saturday</p>
+                    <img src="assets/some_sun.png" alt="slightly sunny" class="some-sun">
+                    <p class="description">some sun</p>
+                </div>
+                <div class="day-box-bottom">
+                    <div class="maxTemp">
+                        <span class="highest">26</span>°
+                    </div>
+                    <div class="minTemp">
+                        <span class="lowest">21</span>°
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookies-box">
+            <div class="cookie-pic-box">
+                <img src="assets/cookie.png" alt="cookie alert" class="cookie-pic">
+            </div>
+            <div class="cookie-body">
+                <h3 class="cookie-title">Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="cookie-btn-box">
+                <button class="cookie-btn" onclick="acceptingCookies()">I accept</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
